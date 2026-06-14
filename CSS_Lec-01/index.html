@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index html as External CSS</title>
+    
+    <!--Add toh karna hoga pehle link karo styler.css file ko to External file as index.html use link tag.-->
+    <link rel="stylesheet" href="./styler.css">
+</head>
+<body>
+
+    <!--hme h1 tag ke sath class ka use karna hai or ul me bhi colour chnage karna hai .-->
+    <h1 class="third">G.Y.M -> Website</h1>
+
+    <!--kya hoga hm ye kre agar id and class dono de ek taga ko toh (possible hai - no tension) -> -->
+    <h2 id="second">Exercise's </h2>
+    <ul id="second" class="fourth">
+        <li>Biceps</li>
+        <li>Triceps</li>
+        <li>Shoulder</li>
+        <li>Legs</li>
+        <li>Arms</li>
+        <li>Chest</li>
+        <li>Stretching</li>
+        <li>Back</li>
+    </ul>
+
+    <!--h2 tag ko hm badalna chahte hai colour property of css se toh hm kya kr sakte hain.  -> element select karenge ushi ko selector khte hain in styler.css file me for index.html as reference diya hai link tag me.-->
+    <!--toh jb hm likhenge in styler.css file me toh h2 tag do hai hamre code me Exercise wala or diet wala pr hame diet wale me change karna hai.toh hm use karenge id ka in diet h2 tag me.-->
+
+    <h2 id="first" class="fourth">Diet</h2>
+
+    <ul class="third">
+        <li>Veg:
+            <ol>
+                <li>Paneer</li>
+                <li>Soya</li>
+                <li>Grams</li>
+                <li>Ground-Nuts</li>
+                <li>Rajma</li>
+                <li>Daal</li>
+                <li>Tofu</li>
+                <li>Dry-Fruits</li>
+            </ol>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li>Non Veg:
+            <ol>
+                <li>Fish</li>
+                <li>Egg</li>
+                <li>Chicken</li>
+                <li>Mutton</li>
+                <li>Briyani</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>

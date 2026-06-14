@@ -1,0 +1,117 @@
+/* Tag Element selector */
+
+/* h1{
+    background-color: pink;
+}
+
+ul{
+    background-color: chartreuse;
+}
+
+h2{
+    background-color: blue;
+} */
+
+ /* comments in css lagate hain hm using (ctrl + / ) buttton. */
+
+ /* id base selection  and # based selection */
+/* syntax of id base selection */
+/* first -> diet h2 tag tha */
+
+
+/* #first{
+    background-color: blue;
+}
+
+/* second -> exercise h2 tag tha. */
+/* #second{
+    background-color: darkblue;
+}  */
+
+/* jaruri nahi hai ki tag ko hi kr sakte hai hm kr sakte hain also -> insided tags of list. */
+/* class based selection hai ye */
+
+/* .third{
+    background-color: greenyellow;
+}
+
+.fourth{
+    background-color: green;
+} */
+
+/* group based selection */ 
+/* me chahta hu h1 tag ko bhi black karna hai or jinki class fourth hai unka colour jaisa hai vohi rahe.   */
+ 
+  /* h1 , .fourth , #second{
+    background-color: darkcyan;
+  } */
+
+  /* Rgb colours */
+  /* h1{ */
+    /* background-color: rgb(red, green, blue); */
+  /*  background-color: rgb(104, 56, 149);
+  } */
+
+  /* Rgba colors */
+  /* h2{ */
+    /* background-color: rgba(red, green, blue, alpha as transparency); */
+   /* background-color: rgba(130, 33, 33, 0.9);
+  } */
+
+  /* hsl colors */
+  /* .fourth{ */
+   /* background-color: hsl(hue, saturation, lightness);  */
+     /* background-color: hsl(110, 50%, 50%);
+  } */ 
+
+  /* .third{ */
+    /* background-color: hsl(hue, saturation, lightness, alpha as traperency); */
+    /* background-color: hsla(110, 50%, 50%, 0.6);
+  }  */
+  
+
+  /* FONTS :- */
+
+  h1{
+    font-size: px;
+  }
+
+  ul{
+     font-size: 20px; 
+    /* 2em size hai ul ka vo parent hai li ka jo niche likha hai uska bhi size 2em hi hoga jo ul ka parent hoga pr depend karega. */
+  }
+  /* parent kon hai li ka -> ul or ol ex:  jaise h2 ka h1 hai , h1 ka body hai, */
+  li{
+    font-size: 1em;
+    /* 20 px hoga size ul ka parent hai li ki toh uska bhi 20px hoga. */
+   } 
+
+  html{
+    font-size: 40px;
+    /* depends through rem on root element html hai. */
+   } 
+/* 
+  h2{
+    font-size: 2rem;
+    /*  root element pr depend karta hai rem apna to html hi hai root element ka size hai 40px. toh uska twice hoga size 2rem -> h2 ka hoga 80px */
+  /* } */ 
+
+  h2{
+    /*font-size: 2vw;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    /* 1vw and 2vw */
+  }
+
+  /* li{
+    font-size: 50%;
+  } */
+
+
+
+
+
+
+
+  
