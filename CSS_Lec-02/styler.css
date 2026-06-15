@@ -1,0 +1,71 @@
+/* p{
+    background-color: blue;
+
+} */
+
+
+/* universal tag */
+/* *{
+    /* universal selector hai *{insided any change to change whole the project.}. */
+    /* padding: 0px;
+    margin: 0px;
+} */ 
+
+/* h1 tag */
+h1{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border: 10px solid orange;
+    padding: 20px;
+    /* jb content box se karoge toh height or width content-box se lenge. -> content-box.  */
+    box-sizing: content-box;
+
+    /* padding: 40px;
+    margin: 50px; */
+    /* kisi bhi element ko inline banana hai to likh de inline. */
+    /* inline element ki tarah behave kr rahe hain ye. dono bagal me aa gaye display: inline-block lagake */
+
+    /* display:inline-block; */
+
+}
+
+h2{
+    background-color: chocolate;
+    /* all include when we write border box -> border,content of box(height,width), padding.  */
+    height: 300px;
+    width: 300px;
+    /* display: inline-block; */
+    border: 10px solid orange;
+    padding: 20px;
+    /* jb border se karoge toh height or width border se li jayegi -> border-box. */
+    box-sizing: border-box;
+}
+
+/* span tag : is a inline element. */
+span{
+    /* kya span tag apply karega height or width tag ko. -> nahi karega */
+    /* background color kyu comment kiya padding or margin ke liye effect hota hai visually now showing you to see not show as when you develop a website . jb hataoge color prperty from commented. */
+    background-color: red;
+    /* horizontally applied hote hain padding andd margin not vertically. */
+    height: 200px;
+    width: 300px;
+
+    /* padding: 20px;
+    margin:20px; */
+
+
+    /* no change in vertically -> visually effect inhi ki vajh se ho raha hai. */
+    /* margin-top:30px;
+    margin-bottom:30px;
+    padding-top:50px;
+    padding-bottom:40px; */
+    /* but change in horizontally */
+    margin-left: 40px;
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-right:30px;
+    /* bock se block create honge jahan jahan or jiskeliye span lagaya hai vahan vahan. */
+    display: block;
+
+}

@@ -1,0 +1,53 @@
+h1{
+
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+
+    /* border-width: 10px;
+    border-style: solid;
+    boarder-color: black; */
+
+    /* short form notation of border se one line me execute hoga. */
+    /* border: 10px solid red; */
+
+    /* use of padding for insided element h1 jo likha hai vo border se chipake ga nahi. gap me rahega  */
+    /* eually all sided to the border.  */
+
+    /* border content ke saath touch na ho. */
+
+    /* padding: 10px; */
+    /* bahar ke space se duur hoga ye kaam karega as you see in output. */
+    /* margin: 30px; */
+
+    /* top pr hi aayega border  */
+    border : 10px solid black;
+    /* padding-right : 10px; */
+
+    /* ander kaise change kare hm */
+    /* top se 10px,right se 20px ,bottom se 30px, left se 40px */
+     /* padding: 10px 20px 30px 40px; */
+     /* top or bottom se 20px, right or left se 40px */
+     padding: 20px,50px;
+
+     /* same as margin */
+     /* bahar ka space se kitni door hai content ka border */
+     margin-top: 50px;
+     margin: 10px 20px 30px 40px;
+     border-radius:30px;
+
+
+}
+
+h2{
+    background-color: pink;
+    border: 2px solid blue;
+}  
+
+p{
+    background-color: aquamarine;
+    padding: 20px;
+    border:5px solid blue;
+    margin:5px;
+}
+
