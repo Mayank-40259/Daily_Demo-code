@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- <link rel="stylesheet" href="style.css">
+    <style>
+        #firstId{
+            background-color:yellowgreen;
+        }
+    </style> -->
+
+    <!-- <style>
+        h1{
+            background-color: blue;
+            /* blue kyu nahi hua yellow hi kyu hua. */
+        }
+    </style> -->
+
+    <!-- internal css vs external css me se konse ki priority jyad hai -> ye pata lagega by link tag ko niche likhne se of internal css ke style wale tag ke niche link tag hamesa (always) likhenge. -->
+     <!-- or hame pata hai coding me jo value updation ke time last line of update me jo value likhi hogi vohi value hoti hai print vese hi color ya koi property follow hoti hai. -->
+
+     <link rel="stylesheet" href="style.css">
+     
+     <!-- final wala hi apply hoga. -->
+
+</head>
+<body>
+
+         <!-- pink colour hi kyu show hua khaki colour kyu nahi show hua. why because they conflict each other -->
+          <!-- inline css performed ho rahi hai. Sabse jyada preferance inline css ko di jayegi. -->
+
+        <h1 class="classA" id="firstId">Hello Coder Army</h1>
+        <h2 style="background-color: blue">Strike is coming soon</h2>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+#container{
+    height: 200px;
+    width: 300px;
+    background-color:darkblue;
+    position: relative;
+
+}
+
+.rectangle,.first{
+    height: 56px;
+    width: 300px;
+    background-color: red;
+}
+    
+#circle{
+    height: 77px;
+    width: 77px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    right: 120px;
+    top: 61px;
+}
+
+.second{
+    height: 56px;
+    width: 300px;
+    background-color:red;
+    position:absolute;
+    bottom: 0px; 
+}

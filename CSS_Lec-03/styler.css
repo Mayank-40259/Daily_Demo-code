@@ -1,0 +1,61 @@
+/*Positioning kaise kare text ko.  */
+/* types : -
+ 1).static : ye by default hai.(apne aap -> pehle se hi hota hai.).
+ 2).relative : 
+ 3).fixed :
+ 4).sticky :
+ 5).absolute :
+
+ */
+
+ /* *{
+    margin: 0opx;
+    padding: 0px;
+ } */
+
+
+h2{
+    background-color:blue;
+    position: relative;
+    left: 100px;
+    /* bottom: 50px; */
+    /* top right */
+    /* relative me -> top,bottom,right,left 4 terms aate hain.  */
+    /* static by default hota hai likho chahe mat likho static vesa hi rahega */
+    /* container ko dekh lena vahi rahega change nahi hoga -> relative ki khasiyat hai ye. */
+    /* relative place bana leta hai ye yahan or vahi rahega not moving containers.*/
+}
+
+h3{
+    background-color: pink;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+    z-index: 15;
+    /* fixed wale me chahe koi bhi container aa sakta hai moving wale ko move kar doge agar kahi toh. */
+    /* fixed wala original position ko chod deta hai or usko khta hai ki dusra element uski jagah aa sakta hai. */
+    /*  */
+
+}
+
+h4{
+    background-color: brown;
+    position: sticky;
+    top: 10px;
+    /* ruk jata hai fixed wala iske baad top or position ke hisab se ye thodi der baad  */
+    
+}
+
+
+p{
+    background-color: chocolate;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    margin: 0px;
+    /* with respect to gaping or set karega khud ko through positions to relative,fixed,sticky --> its ancesters(parents,grantparent). */
+    /* div ki position ko relative mark kr diya tha.  ushi se kaam or move karta hai apna navigation bar. */
+    /* z-index :- matlab overlap krr raha hai vo ek ke upar ek usko set karne ke liye aisa kiya gaya hai ishme ki vo dikhe. */
+    z-index: 10;
+    /* jiski z-index ki value jyada hogi vo override kr jayega ek ke upar ek. */
+}

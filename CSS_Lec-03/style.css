@@ -1,0 +1,50 @@
+/* CSS -> Cascading Style Sheets */
+h1{
+    background-color: khaki;
+}
+/* all Notes:- */
+/* 0).important keyword with tag in property. --> !important.*/
+/* 1).inline css ki priority high hoti hai. */
+/* 2).id unique hoti hai hr element ki toh ID ki priority -> high hoti hai.  */
+/* 3).class ka priority high hoti hai. */
+/* 4).tag ki priority low hoti hai. --> (h1,h2-tag).--> ordering matter karegi --> final wali baat. */
+/* 5).Ordering important hai yahan --> (Tie). */
+
+
+/* id based selection */
+/* hm dekh sakte hain yahan ordering se toh nahi ho raha -> matlab final priority */
+/* har ek element ki apni khud ki ek unique id hoti hai. jiski priority high rehti hai when we applying external css. */
+/* #firstId{
+    background-color:green;
+} */
+
+
+/* class based selection */
+/* hm dekh sakte hain yahan ordering se toh nahi ho raha -> matlab final priority */
+/* har ek element ki apni khud ki ek class hoti hai. jiski priority low rehti hai jb hm id ko dekhe. when we applying external css. */
+/* .classA{
+    background-color:brown;
+} */
+
+/* id based selection */
+#firstId{
+    background-color:yellowgreen
+}
+
+/* li{
+    background-color:gold;
+} */
+
+/* #firstId{
+    background-color:blue;
+    background-color:wheat;
+    /* ordering wali baat hoti hai yahan.
+    /* final wali baat --> wheat color hoga yahan. */
+
+/* } */ 
+
+h2{
+    background-color: aquamarine !important;
+    /* inline css ko oveeride kr deta hai --> important */
+    /* agar priority inline ki jyada hai or vo apke case me hai or aap chahte ho color external css tag (h1,h2) wala print karana chahte ho toh print hoga. */
+}
