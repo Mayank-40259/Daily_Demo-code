@@ -1,0 +1,96 @@
+            /* Flex-Box Lecture-04 --> using flexbox froggy website to understand flexbox concept easily.*/
+
+            
+h1{
+    Background-color : red;
+}
+
+
+.container{
+    /* Container parent element hai or isse jude hue sab iske child hain -> box-first-second-third-fourth; */
+    background-color: antiquewhite;
+    /* height: 800px; */
+    display: flex;
+    height: 500px;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* also we can use column */
+        /* isse hum apne box ko row me arrange kar sakte hain */
+        /* by default flex-direction: row; */
+        /* container utni hi height leta hai jitna uske ander content hota hai */
+        /* also use row, row-reverse, column, column-reverse */
+        /* justify-content: center,start,end. & space-around(boxes ke beech me margin set hogi),space-between(first and end ko do side chipka do beech walo ko equaly distance me rakho),space-evenly(barabar-brabar distance me rakho sabhi boxes ko.) */
+        /* column wala hoga tb horizontal-> cross-axis hogi && vertically-> main-axis hogi */
+        /* row wala hoga tb horizontal-> main-axis hogi && vertically-> cross-axis hogi */
+        /* justify-content main-axis ke around kaam karta hai. 
+        main axis decide kun karega, aapka fex direction*/
+        /* align-items -> uses center,end,start */
+        /* align items work around cross axis */
+        /* flex-wrap: wrap; ka use tab hota hai jab hum chahte hain ki items ek hi line me fit na ho sakein */
+        /* flex-wrap -> used for user friendly layout in phone or mobiles open the website in simte hue form mee aa jati hai. */
+        /* flex-wrap: nowrap; used for vesa hi line me rahe pr simat or patla ho jaye screen chiti karne pr phone or mobile wise. */
+
+
+
+}
+
+
+/* kya hm childrens ke upar bhi kr sakte hain ya nahi. -> yes kr sakte hain. */
+/* extra space koi le sakta hai ki nahi.  use karenge flex-grow:1 (part as partition of assume 100px space bachha hai.), 2,3,... ka */
+/* by default zero hota hai flex-grow ke liye box ka extra space gherna. */
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+
+.first{
+    background-color: orange;
+    /* flex-basis: 200px; */
+
+    /* flex-basis: 200px; ka matlab ye hai ki is box ka initial size 200px hai. ab not followed width: 100px override karega ab .box me jo likha hai ush se. */
+
+    /* flex-grow:1; */
+
+}
+
+
+.second{
+    background-color: green;
+    flex-shrink:4;
+    /* flex-basis: 300px; */
+
+    /* agar container me column karoge toh height(increase)bad jaa rahi hogi or row rakhoge toh width(increase) bad jayegi of flex-basis: me. */
+    /* main axis ke around jo bhi hai apka childrens me se uska size bada dega jitna likha hoga usme flex-basis: me. */
+    /* flex-shrink:4 ka matlab auron se jaldi or jyada shrink hoga at compression screen of mobile or phones setup through inspect. */
+     /* flex-grow:2; */
+    /* double partion part mil gaya from 100px me se ish ko. */
+}
+
+
+.third{
+    background-color: red;
+    align-self: center;
+
+    /* flex-grow:3; */
+}
+
+
+.fourth{
+    background-color: chartreuse;
+
+    /* align-self: flex-start; */
+
+    /* align-self: flex-end,flex-start,center */
+    /* use for kisi ek ko upar or niche hi rakha chahte ho aap toh use karenge align-self ka.  */
+
+}
+
+
