@@ -1,0 +1,35 @@
+/* Chess made as project  of grid */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* color: white;
+    font-size: 30px; */
+
+}
+
+
+.body{
+    background-color:black;
+}
+
+
+.container{
+    height: 800px;
+    width: 800px;
+    display: grid;
+    /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr --> bahut manual hai use repeat() */
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(8,1fr);
+}
+
+
+.white{
+    background-color: white;
+}
+
+
+.brown{
+    background-color:brown;
+}

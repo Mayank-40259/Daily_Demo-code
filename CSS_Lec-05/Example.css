@@ -1,0 +1,77 @@
+/* Grid-garden game use to build understanding about Grid. */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+
+
+.body{
+   
+}
+
+
+.box{
+     background-color: black;
+     color: white;
+     font-size: 20px;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: darkblue;
+
+}
+
+
+.first{
+    background-color: yellowgreen;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* grid: 2/4; */
+}
+
+.second{
+    background-color: red;
+    grid-column-start: 4;
+}
+
+.third{
+    background-color: yellowgreen;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.fourth{
+    background-color:yellow;
+    grid-row-start:2;
+}
+
+.fifth{
+    background-color: red;
+    grid-row-start:2;
+}
+
+.sixth{
+    background-color: yellowgreen;
+    grid-row-start:2;
+    grid-row-end:4;
+}
+
+.seventh{
+    background-color:red;
+    grid-row-start:3;
+}
+
+.eighth{
+    background-color: yellow;
+    grid-row-start:3;
+}
+

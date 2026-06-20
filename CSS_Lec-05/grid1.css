@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.container{
+    /* padding: 10px; */
+    display: grid;
+    /*row-wise -> 200px 200px. column-wise -> 200px 200px. */
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    /* 1fr --> fraction me divvide karna. agar ham aaje change kare number me 2fr 3fr ye ratio me divide karne ka hisab hai. */
+    /* container ke portion se bahar jaa raha hai. --> 1fr use row-wise-> 1fr 1fr. 1fr use column-wise-> 1fr 1fr. */
+    /* acche se container ke ander set ho jaayega. */
+    /* background-color: orange; */
+    gap: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    
+}
+
+.first{
+    background-color: blue;
+}
+
+.second{
+    background-color: navy;
+}
+
+.third{
+    background-color: lawngreen;
+}
+
+.fourth{
+    background-color: green;
+}
