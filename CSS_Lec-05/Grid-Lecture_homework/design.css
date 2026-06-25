@@ -1,0 +1,81 @@
+/* home work of grid design lecture of css. */
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.box{
+    background-color: black;
+    color: blue;
+    font-size: 20px;
+}
+
+
+.container{
+    height: 600px;
+    width: 800px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color:mediumblue;
+
+}
+
+.first{
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.second{
+    background-color: grey;
+    grid-column-start: 2;
+    grid-column-end:4;
+}
+
+.third{
+    background-color: khaki;
+     grid-column-start: 4;
+     grid-column-end: 6;
+}
+
+.fourth{
+    background-color: khaki;
+    grid-column-start: 2;
+}
+
+.fifth{
+    background-color: white;
+    grid-column-start: 3;
+    grid-column-end:5;
+}
+
+.sixth{
+    background-color: red;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.seventh{
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.eighth{
+    background-color: red;
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+
+.ninth{
+    background-color:teal;
+    grid-column-start:4;
+}
+
