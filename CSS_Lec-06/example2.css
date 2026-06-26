@@ -1,0 +1,42 @@
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    /* background-color: orange; */
+    /* box ki shadow hogi ish se */
+/* box-shadow: 10px 10px blue; */
+    /* 1st value offset of x (+ve) and 2nd value offset of y (-ve) according to axis direction.*/
+    /* 2nd value ko agar -value (-10px) kar du toh y (+ve) me chala jaayega. from -y direction */
+/* box-shadow: 10px -10px blue; */
+    /* 1st value ko agar -value (-10px) kar du toh x (-ve) me chala jaayega. from +x direction */
+ /* box-shadow: -10px 10px blue; */
+    /* 1st value same likh du 10px pr second ko me 0px likh du toh y direction shadow gayab ho jati hai. sirf x direction me dikhegi 10px. */
+/* box-shadow: 10px 0px blue;     */
+    /* 2nd value same likh du 10px pr first ko me 0px likh du toh x direction shadow gayab ho jati hai. sirf y direction me dikhegi 10px.  */
+/* box-shadow: 0px 10px blue;     */
+    
+     /* 1st,2nd.3rd value jo add hui hai vo iski blur-radius hai jo add hui hai. */
+     /* blur se cheeze smooth nazar aati hain hame. */
+    /* box-shadow: 10px 10px 5px blue; */
+
+    /* 1st,2nd,3rd,4th value jo add hui hai vo iski spread-radius hai jo add hui hai. */
+    /* ye spread radius har direction of box se badti hai radius of box ki length,breadth,height of box bada chota kar sakte hain hm */
+    /* box-shadow: 20px 20px 10px 20px blue; */
+
+    /* inset property. se box ki shadow box ke ander aana suru karegi or aayegi. */
+    /* box-shadow: inset 10px 10px blue; */
+
+    /* sun made : */
+    /* background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px red; */
+
+    /* overflow property */
+    /* hidden se vo chip jaayega toh bhai dikhna toh chahiye na  */
+    /* overflow: hidden; */
+    overflow: scroll;
+
+}
+
+/* offset-x offset-y blur-radius spread-radius*/
+
