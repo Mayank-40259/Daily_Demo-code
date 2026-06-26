@@ -1,0 +1,63 @@
+/* Responsive design ka lecture-06 of CSS. */
+
+
+
+/* 3).ab mobile ke liye lagegi default waali */
+/* Desktop - First. */
+/* desktop wala hoga ye shrink karke phone wale me jayega. */
+/* default waali media query */
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    background-color: aqua;
+
+}
+
+
+  /* Mobile First */
+    /* mobile wala hoga shrink karke. */
+   /* series ki wajah se 600 pr pink hua pr uske baad niche 900 wala bhi chal gaya tha. */
+  /* max width ki media query */
+  /* 2).kaam pr dekh paa rahe hai 600 se pink color */
+  /* @media screen and (max-width: 600px){
+    .container{
+        height: 300px;
+        width: 300px; 
+        background-color: pink;
+        font-size: 30px;
+    } 
+    
+}  */
+
+/* phone wala hoga shrink karke. */
+/* uupar se niche bhi likh sakte hai  toh variation aayega numbering of max and min me rang badlega.*/
+/* max width ki media query */
+/* @media screen and (max-width: 900px){
+     .container{
+        background-color: green;
+        font-size: 40px;
+    }
+} */
+
+/* real world me phone ka istemal hota hai mobile me websites chalate hain */
+/* 3).thoda made phones ke liye lagegi shrink se badegi */
+/* min width ki media query */
+@media screen and (min-width:600px){
+    .container{
+        background-color: orange;
+        font-size: 60px;
+    }
+}
+
+
+/* 3). laptop or desktop ke liye use hogi.*/
+@media screen and (min-width:900px){
+    .container{
+        background-color: green;
+        font-size: 80px;
+    }
+}
+
+
+
