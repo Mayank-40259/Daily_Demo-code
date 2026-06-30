@@ -1,0 +1,64 @@
+/* Animation Lec.07 of CSS */
+
+*{
+    height: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+.container{
+    padding: 20px;
+    position: relative;
+}
+
+
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: orange;
+    animation-name: moving;
+    /* kitne time baad color change kare from to in keyframes. */
+    /* animation ki duration kya hone waali hai */
+    animation-duration: 3s;
+    /* count likh do kitni baar chalana hai apko AND infinite bhi likh sakte ho aap. */
+     animation-iteration-count: infinite;
+     /* speed of box bhi control of moving from initial to final position through animation-time-function:  */
+     /* slow start hoga fir teej chalega. */
+  /* animation-timing-function: ease-in; */
+     /* pehle fast and fir slow */
+  /*  animation-timing-function: ease-out; */
+     /* pure raaste vo slow hi chale. */
+ /* animation-timing-function: linear; */
+     /*animation slow start hoga and slow hi end hoga.  */
+ /* animation-timing-function: ease-in-out; */
+    /* cubic-bezier(n,n,n,n) ->  */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    position: absolute;
+}
+
+/* all things are handled smoothly. */
+/* animation ka name do pehle jaise moving. fir indentifier ke sath keyframes. */
+/* @keyframes identifier{
+
+} */
+
+@keyframes moving{
+    from{
+        /* initial jagah jahan abhi box hai  */
+        background-color: orange;
+        top: 10px;
+        left: 10px;
+
+    }
+    to{
+        /* final jagah jahan aap pahuchna chahte ho. */
+        background-color: blue;
+        top: 10px;
+        left: 2500px;
+
+    }
+
+}
