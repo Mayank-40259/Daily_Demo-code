@@ -1,0 +1,62 @@
+/* project of animation lecture of CSS. */
+/*  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 20px;
+}
+
+.container{
+    
+    background-color:rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.129);
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    width: 70%;
+    border-radius: 5px;
+    white-space: nowrap;
+    /* wrap ka matlab ikkata ho na jagah km ki vajah se sukudna. */
+    /* parent hai container */
+    /* ushi me likhunga hidden of these --> overflow --> content inside of container */
+    overflow: hidden;
+
+}
+
+
+p{
+
+    /* margin-left initial position from 0% to 100% margin-left final position  */
+    margin-left: 100%;
+    /* overflow hoga container ke ander jo content hai. */
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    /* child hai paragraph tag <p> */
+
+}
+
+
+@keyframes moving{
+
+    from{
+        /* positive margin */
+        margin-left: 100%; 
+    }
+    to{
+        /* negative margin */
+        margin-left: -30%;
+    }
+
+}
