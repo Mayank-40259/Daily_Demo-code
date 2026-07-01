@@ -15,13 +15,13 @@
 
 
 .box{
-    height: 100px;
-    width: 200px;
-    background-color: orange;
+    height: 300px;
+    width: 400px;
+    background-color: red;
     animation-name: moving;
     /* kitne time baad color change kare from to in keyframes. */
     /* animation ki duration kya hone waali hai */
-    animation-duration: 3s;
+    animation-duration: 5s;
     /* count likh do kitni baar chalana hai apko AND infinite bhi likh sakte ho aap. */
      animation-iteration-count: infinite;
      /* speed of box bhi control of moving from initial to final position through animation-time-function:  */
@@ -30,35 +30,57 @@
      /* pehle fast and fir slow */
   /*  animation-timing-function: ease-out; */
      /* pure raaste vo slow hi chale. */
- /* animation-timing-function: linear; */
+ animation-timing-function: linear;
      /*animation slow start hoga and slow hi end hoga.  */
  /* animation-timing-function: ease-in-out; */
     /* cubic-bezier(n,n,n,n) ->  */
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
+ /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) */
+    /* alternate matlab wapas aana */
+    animation-direction: alternate;
+    /* kitna time me delay hona chahiye ye box -> moving waala. -> at starting point or initial */
+    animation-delay: 2s;
+    /* apne hisab se set karna forward,backward,... directions. --> iski wajah se hm infinite interation ko hata kr 1 kr denge hm. or box forward me at final pr ek dum se ruk jaayega and backward use karenge toh back nahi aate dikhega box pr ek dum se initial pr aa jaayega box. */
+    /* forward,backward also used */
+  /* animation-fill-mode: backwards; */
+    /* previous lecture se hai ye position from parent container me relative to child box me absolute. */
     position: absolute;
 }
 
 /* all things are handled smoothly. */
 /* animation ka name do pehle jaise moving. fir indentifier ke sath keyframes. */
-/* @keyframes identifier{
+/* @keyframes identifier/moving{ --0%--25%--50%--75%--end.
 
 } */
 
 @keyframes moving{
-    from{
+    0%{
         /* initial jagah jahan abhi box hai  */
         background-color: orange;
         top: 10px;
         left: 10px;
 
     }
-    to{
+    25%{
         /* final jagah jahan aap pahuchna chahte ho. */
         background-color: blue;
         top: 10px;
         left: 2500px;
 
+    }
+    50%{
+        background-color: green;
+        top: 1500px;
+        left: 2500px;
+    }
+    75%{
+        background-color: blue;
+        top: 1500px;
+        left: 10px;
+    }
+    100%{
+        background-color: orange;
+        top: 10px;
+        left: 10px;
     }
 
 }
