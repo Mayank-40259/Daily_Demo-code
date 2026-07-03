@@ -1,0 +1,81 @@
+/* Project of Solar System Animation CSS-Lec-08. */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* bina use of flex ke karo or banao aap. */
+
+    /* position: relative; */
+
+}
+
+.box{
+    /* height: 200px;
+    width: 200px; */
+    height: 400px;
+    width: 400px;
+
+    background-color: red;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* jo bhi ish box ki width or height ka 50% hoga vo hota hai yahan. */
+    /* transform: translate(-50%, -50%); */
+
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    animation: moving;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+
+
+@keyframes moving{
+
+    /* from{
+        /* aap x-direction me 200px duur chale jaao fir x-direction me vaapas aaao. or apni axis pr rotate karo and ek fore or lag raha hai opposite -360deg off rotation to stable or fight with opposite direction force -ve --><-- +ve  */
+        /* syntax -> transform: rotate(initial) translateX(final) rotate(initial) <- yahi hai opposite force waala. */
+        /* transform: rotate(0deg) translateX(200px) rotate(0deg);
+  /*  }
+    to{ */ 
+        /* syntax -> transform: rotate(final) translateX(final) rotate(final)*/
+        /* transform: rotate(360deg) translateX(200px) rotate(-360deg); */
+   /* } */
+
+   /* aasan tarika nahi hai koi. */
+
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+       transform: rotate(360deg);
+   }
+
+}
+
+.sun{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    transform: translateX(100px);
+    border-radius: 50%;
+
+}
