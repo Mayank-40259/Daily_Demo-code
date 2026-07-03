@@ -1,0 +1,126 @@
+/* Transition and Transform Lec-08 CSS used. */
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+.container {
+   height: 100vh;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   /* bhai ye ek 2D device hai ishe 3D visualize karwa do fir wo visualize me banega */
+   /* ishi vajah se perspective mark karte hain hm. */
+   /* perspective: 800px; */
+}
+
+
+.box {
+   height: 250px;
+   width: 250px;
+   border-radius:50%;
+   background-color: orange;
+   /* mouse ka curser ko pointer hand me convert kr dega. */
+   cursor: pointer;
+
+   /* -300px likha toh upar aagaye boxes and jab 300px likha toh niche aa gaye the */
+ /* transform: translateY(-300px); */
+
+   /* usecase of translate is more  --> div ko center me karne ke liye bhi karte hain. */
+   /* log div ko center nahi kar paate --> display->flex se ho jaata hai. */
+ /* transform: translate(200px, 300px); */
+
+   /* dono ke dono 30degree rotate ho jaayenge. */
+ /* transform: rotate(130deg); */
+
+   /* skew sukad jayenge by degree with direction of axis x and y. */
+ /* transform: skewY(-10deg); */
+
+
+
+    /* transition property */
+   /* jiska transition badalna hai use likho width,height,background-color,all <- for all transition property,... */
+   /* transition-property: all */
+
+    /*kitne time me hoga duration of color ka transition -> transition property.*/
+   /* transition-duration: 3s; */
+
+   /* also used in transition same as animation */
+   /* linear,ease-out,ease-in,cubic,ease-in-out,ease*/
+   /* transition-timing-function: ease-in; */
+
+   /* transition me kitna time baad ho matlab kitna latr start ho toh delay property use hogi. */
+   /* transition-delay: 2s; */
+
+   /* shorthand property matlab some operation are perform at or in one line code. */
+   /* transition: all 3s ease-in 2s;  */
+   /* transition: all 3s; */
+
+   /* Note: points. */
+   /* transition ko trigger movement chahiye hota hai */
+   /* animation wali website pe gaye toh website automatic tak chalti rehti hai. */
+   font-size: 50px;
+   color: white;
+   /* justify-content: center;
+   align-items: center;
+   padding: 30px; */
+   animation-name: moving;
+   animation-duration: 5s;
+   /* animation default me linear hi hota hai. */
+   transition-timing-function: linear;
+
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes moving{
+   from{
+      transform: rotateZ(0deg);
+   }
+   to{
+      transform: rotateZ(360deg);
+   }
+
+}
+
+/* jaise hi arrow or curser se touch karoge box ko toh uska color change hoga. */
+/* used hover. */
+
+/*.box:hover { */
+   /* background-color: purple;
+   height: 300px;
+   width: 250px; */
+
+   /* scale ka means hai size normal se kitna dugna double 2 to tiguna third 3.... */
+   /* and for scaleX(3) --> X-axis-direction me double hoga,Y-axis-direction me double hoga,*/
+   /* dono pr karoge touch toh dono me koi ek hi ek time pr badega in directions me. */
+   /* transform: scale(3); */
+   /* transform: scaleX(3); */
+   /* transform: scaleY(3); */
+
+ /* transform: translate(100px, 200px); */
+ /* transform: translateX(200px); */
+ /* transform: translateY(200px); */
+   /* transform me teen property laga sakte ho aap. translate,skew,scale,rotation ki property bhi aap laga sakte ho. */
+   /* aap transform property ko x and y matlab 2-D me toh dekh liye pr 3-D ka kuch socha 3-D me bhi aisa hota hai. using translateZ(). property x ki direction me move hoga -> translateX(), property y direction me move hoga -> translateY() && */
+   /* abhi tak hmne 2D devices and screen dekhi thi pr ab 3D device nahi but image or box 3D me possible hai hona. */
+ /* transform: translateZ(500px); */
+   /* ab box zoom-out hote dikhayi dega kyuki perspective se vo 3D me aa gaya hai. */
+   /* perspective matlab me kitni dur se ush item ko dekh raha hu. or vo item toh 500px translate aage aaya hai apni original or initial axis(0,0,0) --> (x,y,z) */
+   /* mere or desktop screen 2D ke 800px perspective hai pr touch karunga box ko toh zoom hoga box by z direction me aayega badke zoom hoga meri taraf --> perspective kam hoga --> pehle tha 800px -> perspective and translate tha 200px toh jab click karenge box pr tab 200px gatega from perspective of my laptop or desktop screen to me --> 600px(px-pixel)  */
+   /* 3D movie hame 3d kyu lagti hai and tajmahal ki hath me rakh kr photo khichate log. hath se piche tajmahal ki duri perspective hi maan lo. */
+
+   /* rotate me use hoga iska rotateX,rotateY,rotateZ --> AAp teeno me laga sakte ho isko. */
+   /* transform: rotateY(-50deg); */
+
+/* } */
+
+
+/* Transforms : rotation, big to small size,change kr sakta hu me.*/
+/* transformation ki wajah hoti hai ki -> bagal wale ki shape na badle jab hm select karein kisi ek ko and ex . cards in food ordering website swiggy type. */
