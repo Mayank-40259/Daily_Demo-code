@@ -7,10 +7,6 @@
 }
 
 
-.body{
-   
-}
-
 
 .box{
      background-color: black;
@@ -74,4 +70,3 @@
     background-color: yellow;
     grid-row-start:3;
 }
-

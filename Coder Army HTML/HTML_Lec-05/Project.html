@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>University Registration Form</h2>
+    <br>
+</head>
+<body>
+    <pr>Please fill out the form below to register.</pr>
+    <br>
+    <hr>
+
+    <forms>
+        <h2>Personal Details</h2>
+        <br>
+        <label for="fsname">First Name:</label>
+        <input type="text" name="userfirstname" id="fsname" placeholder="e.g.Varun" required>
+        <br><br>
+        <label for="surname">Last Name:</label>
+        <input type="text" name="userlastname" id="surname" placeholder="e.g.Singh,Rathor,Kumar...">
+        <br><br>
+
+        <label for="dateofbirth">DOB:</label>
+        <input type="date" name="dob" id="dateofbirth" >
+        <br><br>
+
+        <label>Gender:</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="male" value="gender">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="Gender" id="female" value="gender">
+        <br>
+        <label for="other">Other</label>
+        <input type="radio" name="Gender" id="other" value="gender">
+        <br><br>
+
+        <h4>Upload Your Photo</h4>
+        <input type="file" name="file">
+
+        <br><br>
+        <hr>
+        <br>
+        <h2>Contact Information</h2>
+        <br>
+        <label for="emailadd">Email Address:</label>
+        <input type="email" name="email" id="emailadd" placeholder="you@example.com">
+        <br><br>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" name="phone" id="phonenumber" placeholder="7464837505">
+        <br><br>
+        <label for="Address">Mailing Address:</label>
+        <textarea name="Address" id="Address" rows="15" col="10"></textarea>
+        <br><br>
+        <hr>
+        <br>
+        <h2>Academic Information:</h2>
+        <br>
+        <label for="course">Select Your Course:</label>
+        <select name="course" id="course >
+            
+            <option value="CSE">CS&E</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+            <option value="Polytechnic">Polytechnic</option>
+            <option value="IT">Information Technology</option>
+            <option value="HM">Hotel Management</option>
+        </select>
+        <br>
+        <br>
+        <label>Extracurricular Interests:</label>
+        <br>
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="interest" id="sports" value="Sports">
+        <br>
+        <label for="music">Music & Arts</label>
+        <input type="checkbox" name="interest" id="music" value="Music">
+        <br>
+        <label for="clubs">Technology Clubs</label>
+        <input type="checkbox" name="interest" id="clubs" value="Clubs">
+        <br>
+        <label for="volunteering">Volunteering</label>
+        <input type="checkbox" name="interest" id="volunteering" value="Volunteering">
+        <br><br>
+        <hr>
+        <br><br>
+        <h2>Create Your Account</h2>
+        <br>
+        <label for="password">Create a Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="security">Security Question:</label>
+        <select name="questions" id="security">
+            <option value="petname">What was your first pet's name?</option>
+            <option value="birthplace">What was your birthplace?</option>
+            <option value="car">What is your favourite car?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security Answer:</label>
+        <input type="text" name="answer" id="answer">
+        <br><br>
+        <label for="agreement">I am agree to the Terms and Conditions.</label>
+        <input type="checkbox" name="agreement" id="agreement">
+        <br><br>
+        <hr>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+        <!-- older method -> <input type="submit" value="Register">-->
+    </forms>
+
+</body>
+</html>

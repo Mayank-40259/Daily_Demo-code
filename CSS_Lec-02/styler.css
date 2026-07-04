@@ -47,7 +47,7 @@ span{
     /* kya span tag apply karega height or width tag ko. -> nahi karega */
     /* background color kyu comment kiya padding or margin ke liye effect hota hai visually now showing you to see not show as when you develop a website . jb hataoge color prperty from commented. */
     background-color: red;
-    /* horizontally applied hote hain padding andd margin not vertically. */
+    /* horizontally applied hote hain padding and margin not vertically. */
     height: 200px;
     width: 300px;
 

@@ -1,8 +1,8 @@
 /* Tag Element selector */
 
-/* h1{
+  h1{
     background-color: pink;
-}
+} 
 
 ul{
     background-color: chartreuse;
@@ -10,13 +10,13 @@ ul{
 
 h2{
     background-color: blue;
-} */
+} 
 
  /* comments in css lagate hain hm using (ctrl + / ) buttton. */
 
  /* id base selection  and # based selection */
 /* syntax of id base selection */
-/* first -> diet h2 tag tha */
+/* #first -> diet h2 tag tha */
 
 
 /* #first{
@@ -30,6 +30,7 @@ h2{
 
 /* jaruri nahi hai ki tag ko hi kr sakte hai hm kr sakte hain also -> insided tags of list. */
 /* class based selection hai ye */
+/* using .class -> .first */
 
 /* .third{
     background-color: greenyellow;
@@ -46,7 +47,7 @@ h2{
     background-color: darkcyan;
   } */
 
-  /* Rgb colours */
+  /* Rgb colours : - */
   /* h1{ */
     /* background-color: rgb(red, green, blue); */
   /*  background-color: rgb(104, 56, 149);
@@ -64,8 +65,9 @@ h2{
      /* background-color: hsl(110, 50%, 50%);
   } */ 
 
+  /* hsla colours */
   /* .third{ */
-    /* background-color: hsl(hue, saturation, lightness, alpha as traperency); */
+    /* background-color: hsla(hue, saturation, lightness, alpha as traperency); */
     /* background-color: hsla(110, 50%, 50%, 0.6);
   }  */
   
