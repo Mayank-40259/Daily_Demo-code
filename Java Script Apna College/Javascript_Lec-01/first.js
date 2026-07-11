@@ -1,4 +1,6 @@
+// Revision is completed.
 console.log("Variables and Datatypes");
+
 //Variable declaration in javascript (js).
 //var --> Global variable.
 //let --> local variable.
