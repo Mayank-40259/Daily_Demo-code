@@ -1,3 +1,4 @@
+// Revision of js of lec-04
 console.log("ARRAYS And ARRAYS Methods");
 //Arrays : it is a collection of similar kind of data and elements is called Arrays.
 //it is a linear data stucture. at a line | 0 | 1 | 2 | 3 | 4 | 5 |;
