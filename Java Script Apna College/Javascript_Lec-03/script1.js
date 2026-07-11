@@ -1,3 +1,4 @@
+// Revision of js-lec-03
 console.log("LOOPS AND STRING");
 //1st).LOOPS
 
