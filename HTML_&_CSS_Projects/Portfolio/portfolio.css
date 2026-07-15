@@ -1,2 +1,173 @@
 /* CSS_technology ADDED in our Portfolio-website. */
 
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6; 
+    /* line ke beech me jo height hogi. */
+
+}
+
+
+/* whole-website */
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+    border: 1px solid #3a3a3a;
+    border-radius:16px;
+}
+
+
+/* Sidebar-Section-for (Design structure and page.)*/
+.sidebar{
+    height: 120vh;
+    width: 200px;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    padding: 50px;
+    margin: auto;
+}
+
+
+/* Main-Content-Section-(For design structure or page.) */
+.main-content{
+    height: 150vh;
+    width: 700px;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/* Profile-Section */
+.profile{
+    /* koi bhi block level element like --> profile ke ander inline element hai h2,img,p(in sabhi ka content move hoga ye kahi nahi jaa rahi jaise background-color vesa ka vesa hi rahega.move hoga center me keval naam.) all align in center through text-align: center --> property. */
+    text-align:center;
+}
+
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size:1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    font-size: 0.8rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+
+/* Contact Information */
+.contact{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    border-spacing: 10px;
+    padding-top:20px;
+}
+
+.label{
+    color: #0a0a0a;
+    font-weight: 500px;
+    font-size: 0.8rem;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration:none;
+}
+
+.email{
+    margin-bottom: 10px;
+}
+
+
+/* Social-Media Section */
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+.social img:hover {
+    filter: grayscale(0) invert(0);
+}
+
+
+/* Main-Content */
+
+/* Navigation Bar */
+#navigation{
+    /* text-align: end; */
+    /* or nav se bhi kr sakte ho flex ke through */
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#a0a0a0;
+    font-weight:500;
+    transition : color 0.3s ease;
+    
+}
+
+.active, nav a:hover{
+    color:#FFBF00;
+}
+
+/* about me */
+
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: #FFBF00;
+}
