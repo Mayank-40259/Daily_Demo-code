@@ -1,5 +1,5 @@
 /* CSS_technology ADDED in our Portfolio-website. */
-
+/* ADDing Responsive design */
 
 *{
     padding: 0px;
@@ -20,7 +20,7 @@ body{
 /* whole-website */
 .main-container{
     display: grid;
-    max-width: 1200px;
+    max-width: 1800px;
     grid-template-columns: 350px 1fr;
     gap: 40px;
     padding-top: 40px;
@@ -34,16 +34,19 @@ body{
 .sidebar{
     height: 120vh;
     width: 200px;
-    background-color: #2a2a2a;
+    background-color: hsl(0, 0%, 16%);
     border-radius: 16px;
-    padding: 50px;
+    padding: 40px;
     margin: auto;
+    position: sticky;
+    top: 0px;
+
 }
 
 
 /* Main-Content-Section-(For design structure or page.) */
 .main-content{
-    height: 150vh;
+    height: 480vh;
     width: 700px;
     background-color: #2a2a2a;
     border-radius: 16px;
@@ -131,6 +134,7 @@ body{
 
 /* Main-Content */
 
+
 /* Navigation Bar */
 #navigation{
     /* text-align: end; */
@@ -158,8 +162,8 @@ nav a{
     color:#FFBF00;
 }
 
-/* about me */
 
+/* about me */
 .heading{
     color: #e0e0e0;
     font-size: 2rem;
@@ -167,7 +171,199 @@ nav a{
 }
 
 .line{
-    width: 40px;
+    width: 60px;
     height: 5px;
     background-color: #FFBF00;
+    margin-bottom: 15px;
 }
+
+.content{
+    text-align: justify;
+    color:#a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+
+/* skills section */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+/* transform-responsive  */
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight:500;
+}
+
+/* Education-Section */
+#education{
+    margin-top: 30px;
+}
+
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.goal{
+    height: 7px;
+    width: 7px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 5;
+}
+
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 3px;
+    border: 2px solid #3a3a3a;
+}
+
+
+/* Portfolio */
+.project-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project img{
+    height: 180px;
+    width: 100%;
+    /* object --> dimension of website ko sahi kr deta hai --> adjust kr dega. */
+    object-fit: cover; 
+}
+
+.card{
+    padding: 20px;
+
+}
+
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color:#a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card span{
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav{
+        /* Adjust nav for smaller screens */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+}
+
