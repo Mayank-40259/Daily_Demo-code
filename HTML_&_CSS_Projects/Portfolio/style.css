@@ -1,0 +1,309 @@
+/* CSS_technology ADDED in our Portfolio-website. */
+/* ADDing Responsive design */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Isse alignment nahi bigadti */
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6; 
+}
+
+/* whole-website */
+.main-container{
+    display: grid;
+    max-width: 1800px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding: 40px; /* padding-top ki jagah charo taraf padding */
+    margin: auto;
+    border: 1px solid #3a3a3a;
+    border-radius:16px;
+    align-items: start; /* SABSE ZAROORI: Isse sidebar top level par rahega */
+}
+
+/* Sidebar-Section */
+.sidebar{
+    height: auto; /* 120vh fixed ki jagah auto rakhein */
+    width: 300px; /* Width ko container ke hisab se set kiya */
+    background-color: hsl(0, 0%, 16%);
+    border-radius: 16px;
+    padding: 40px;
+    /* margin: auto; <-- Is line ko hata diya taaki sidebar upar rahe */
+    position: sticky;
+    top: 40px; /* Scroll karte waqt top se gap */
+}
+
+/* Main-Content-Section */
+.main-content{
+    min-height: 100vh; /* height 480vh ki jagah min-height sahi rehti hai */
+    width: 100%; /* Fixed 700px ki jagah responsive 100% */
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    /* margin: auto; <-- Isse bhi hata diya */
+    padding: 40px;
+}
+
+/* Profile-Section */
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size:1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    font-size: 0.8rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+/* Contact Information */
+.contact{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top:20px;
+}
+
+.label{
+    color: #a0a0a0; /* color adjust kiya visibility ke liye */
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration:none;
+}
+
+.email{
+    margin-bottom: 10px;
+}
+
+/* Social-Media Section */
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+.social img:hover {
+    filter: grayscale(0) invert(0);
+}
+
+/* Navigation Bar */
+#navigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#a0a0a0;
+    font-weight:500;
+    transition : color 0.3s ease;
+}
+
+.active, nav a:hover{
+    color:#FFBF00;
+}
+
+/* about me */
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color:#a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+/* skills section */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight:500;
+}
+
+/* Education-Section */
+#education{
+    margin-top: 30px;
+}
+
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.goal{
+    height: 7px;
+    width: 7px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 5;
+}
+
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 3px;
+    border: 2px solid #3a3a3a;
+}
+
+/* Portfolio Projects */
+.project-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.card{
+    padding: 20px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .sidebar{
+        position: static;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+}
+
