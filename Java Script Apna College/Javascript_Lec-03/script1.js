@@ -34,7 +34,7 @@ while(m <= 5){
     console.log(" Apna college m = ", m);
     m++;
 }
-console.log("Loop is ended");
+console.log("Loop has ended");
 //4).do-while loop. one time execution of block of code after condition check is called do-while loop.
 //do while loop : syntax. initialization;
 // do{
@@ -115,18 +115,19 @@ let gameNum = 25;
 let userNum = prompt("Guess the game Number : ");
 
 while(userNum != gameNum){ // !== --> pop up created error. // != --> correct work.
-    
    userNum = prompt("You entered wrong number. Guess again : "); //gamelogic.
 }
-
 console.log("congratulations, you entered the right number");
 
-//2nd).STRING 
+
+//2nd).STRING : - 
+
 
 //String is a sequence of characters used to represent text.
 //it is the collection of sequentional characters.in javascript both used double codes(" ") and single codes(' ') to opening and ending.
 //in string we have see in java and javascript --> inbuilt properties and functions --> called methods.
 //eg: sentence,paragraph,words-->spellings.
+
 
 //let str = "Apna College"; ---> Create String.
 //str.length(); --> length of string ---> String Length.
@@ -147,6 +148,7 @@ console.log(string2[3]);//l
 //use of backtric in template in js : --> `template`.
 //template is a special type of string.
 
+
 //Template literals.
 let sentence = `this is a template literals`;
 console.log(sentence);
@@ -157,6 +159,7 @@ let obj ={
     item : "pen",
     price : 10,
 }
+
 //we print item and price at a  single line to use of template literals line. convet values as integer into string. blue 10 in string--> whit 10 in template.
 console.log("the cost of", obj.item, "is", obj.price, "rupees");
 let output = `the cost of ${obj.item} is ${obj.price} rupees`;
