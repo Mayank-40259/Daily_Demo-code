@@ -1,8 +1,26 @@
 // Revision of Operators and Conditional Statements is completed.
 console.log("Operators and Conditional Statements");
+
+// Operators in JS :- There are many types o foperators but some is there :-
+//  # Arithmetic Operators || # Uranary operators
+//  # Assignment Operators || # Comparison  Operators
+//  # Relational Operators ||
+// --> Used to perform some operation on data.
+// #Arithmetic Operators  --> (Addition) --> + , (Substraction) --> - , (Multiplication) --> * , (Division) --> / , (Modulus) --> % ,
+//  Exponentiation --> (2**3 --> 2*2*2 = 8) , #Uranary Operator -> increment(pre --> ++a -> ++3 = 4 && post --> a++ -> 5++ --> 5 --> 6.) & decrement .
+// --> Expression => a + b --> a & b are operands. + is an operator in it. when both are combine so we called this an expression.
+// # Comparison Operators : - # equal to -> = used to assign the value.
+// # equal to & type -> === used to comparision with datatype of 
+// # Not equal to -> != used to when two operands are not equal.
+// # Not equal to & type -> !== used to check type and operands are equal or not.
+// 
+// 
+
+
 //Arithmatic Operators.
 let s = 5;
 let t = 2;
+console.log("s = ", s, " & t = ", t);
 console.log("s + t =",s + t);
 console.log("s - t =",s - t);
 console.log("s * t =",s * t);
@@ -26,12 +44,19 @@ console.log(x);
 
 
 
-//Comparision Operators.
+//Comparision Operators. && Relational operators.
 let a = 5;
 let b = 2; // b = 2; // string count when "5";
 
 console.log("a == b",a==b); //false
 console.log("a >= b ",a >= b); //true
+console.log("5 != 2", a != b); // true.
+console.log("5 !== 2", a !== b); //true
+console.log(" 5 > 2", a > b); //true
+console.log(" 5 < 2 ", a < b); //false
+console.log(" 5 <= 2", a <= b); //false
+console.log(" 5 >= 2", a >= b);//true
+//har language me aisa hi hota hai --> a >= b --> true.
 
 //Logical Operators.
 let u = 6;
@@ -151,6 +176,8 @@ console.log(color);
 //  ternary operators.
  let result = age10 >= 18 ? "adult" : "not adult";
  console.log(result);
+
+ 
  //use MDN Docs to see our webdevelopment reading knowledge.
  //Switch Statements.
  //alert("hello!"); //it is used to create popups in output screen.
