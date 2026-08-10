@@ -1,7 +1,13 @@
 // Revision of js of lec-04
 console.log("ARRAYS And ARRAYS Methods");
-//Arrays : it is a collection of similar kind of data and elements is called Arrays.
-//it is a linear data stucture. at a line | 0 | 1 | 2 | 3 | 4 | 5 |;
+//Arrays : it is a collection of similar kind of data and (elements) is called Arrays.
+// ex--> syntax --> let arr = [24, 45, 60, 40, 30, 23];
+// 
+//                                              | 0  |  1 | 2  | 3  | 4  | 5  |
+//                                              |-----------------------------|
+//it is a linear data stucture. at a line ----> | 25 | 35 | 45 | 55 | 65 | 75 |
+//                                              |-----------------------------|   
+// 
 //nAN error --> means --> Not a Number;
 //Create Array : 
 //let heroes = ["ironman","captain america","hulk","thor","batman"];
@@ -14,11 +20,11 @@ console.log("ARRAYS And ARRAYS Methods");
 //array in js is an object but not print as object.
 //Array Indices : arr[0],arr[1],arr[2]....arr[n];
 //   arrays indices ---> | 0 | 1 | 2 | 3 | 4 | 5 |.
-// as hello | arr[0] = h,arr[1] = e,arr[2] = l,arr[3] = l,arr[4] = o | --->  | h | e | l | l | o |.
+// as hello | arr[0] = h,arr[1] = e,arr[2] = l,arr[3] = l,arr[4] = o | --->  | h | e | l | l | o | --> hello.
 // data in arrays -->        | 97 | 82 | 64 | 76 | 86 |;
 //array indices arr[0...n] =   0    1    2    3    4    
 //in arrays values stored in linear fashion.
-//value or data in array also change by marks[2]= 64 --> marks[2] = 66;
+//value or data in array also change by marks[2] = 64 --> marks[2] = 66;
 //array is mutable in java-script.
 
 
@@ -44,10 +50,13 @@ for(let j = 0;j < heroes.length; j++){ //<= arr.length-1 --> correct,//< arr.len
 
 //2).for-of-loop: //used for arrays.
 for(let hero of heroes){
-    console.log("hero = " +hero.toUpperCase());
+    console.log("hero = " +hero.toUpperCase()); 
 }
 for(let city of cities){
     console.log("city = " +city.toUpperCase());
+}
+for(let mark of marks){
+    console.log("mark = " +mark);
 }
 
 //3).for-in-loop: //not in use for arrays.
