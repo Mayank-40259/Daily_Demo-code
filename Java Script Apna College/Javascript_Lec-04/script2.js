@@ -1,4 +1,5 @@
 // Revision of js of lec-04
+// with practice Question using Methods of Arrays.
 console.log("ARRAYS And ARRAYS Methods");
 //Arrays : it is a collection of similar kind of data and (elements) is called Arrays.
 // ex--> syntax --> let arr = [24, 45, 60, 40, 30, 23];
