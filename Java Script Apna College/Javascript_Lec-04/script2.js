@@ -2,15 +2,20 @@
 // with practice Question using Methods of Arrays.
 console.log("ARRAYS And ARRAYS Methods");
 //Arrays : it is a collection of similar kind of data and (elements) is called Arrays.
+// it is a basic and linear data structure.
+// arrays is mutable in javascript.  || strings are immutable in javascript.
 // ex--> syntax --> let arr = [24, 45, 60, 40, 30, 23];
-// 
-//                                              | 0  |  1 | 2  | 3  | 4  | 5  |
+//
+//                                              |-----------------------------|
+//                       0 to 5   indexing -->  | 0  |  1 | 2  | 3  | 4  | 5  |
 //                                              |-----------------------------|
 //it is a linear data stucture. at a line ----> | 25 | 35 | 45 | 55 | 65 | 75 |
 //                                              |-----------------------------|   
-// 
+//
+//  
 //nAN error --> means --> Not a Number;
-//Create Array : 
+// 
+//Create Array : -
 //let heroes = ["ironman","captain america","hulk","thor","batman"];
 //let marks = [96,75,48,83,66];
 //let info = ["rahul","86","Delhi",];
@@ -27,25 +32,54 @@ console.log("ARRAYS And ARRAYS Methods");
 //in arrays values stored in linear fashion.
 //value or data in array also change by marks[2] = 64 --> marks[2] = 66;
 //array is mutable in java-script.
+// strings are immutable in javascript.
 
+
+// use of objects :-
+let marking = {
+    stud1 : 34,
+    stud2 : 45,
+    stud3 : 56,
+    stud4 : 67,
+    stud5 : 88,
+    stud6 : 89,
+}
+
+console.log(marking["stud1"]);
+console.log(marking["stud2"]);
+console.log(marking["stud3"]);
+console.log(marking["stud4"]);
+console.log(marking["stud5"]);
+console.log(marking["stud6"]);
+console.log(typeof marking["stud1"]);
+console.log(typeof marking);
+
+// ye object wala collection of similar kind of data ke liye sahi nahi hai memmory gher raha hai line-by-line.
+
+// the best way is to use array.
 
 let marks = [96,75,66,80,85];
 console.log(marks);
 console.log(marks.length); //property
+console.log(typeof marks);
 
 let heroes = ['ironman','spiderman','hulk','thor','shaktimaan','antman'];
 console.log(heroes);
 console.log(heroes.length); //property
+console.log(typeof heroes);
 
 let cities = ["delhi","pune","mumbai","hyderabad","benglore","noida","gurgaon"];
 console.log(cities);
 console.log(cities.length); //property
+console.log(typeof cities);
 
 
 //looping an array.
 //printing all elements of an array.eg:using for-loop,for of loop and for in loop also used.,while loop,
+// loops --> iterable --> iterate work karte hain. --> collection of iterables --> (strings, objects, arrays).
 //1).for-loop: //used for arrays.
-for(let j = 0;j < heroes.length; j++){ //<= arr.length-1 --> correct,//< arr.length --> correct.
+// for loop :-> length --> array.length. --> 12.--> last or ending point of loop.
+for(let j = 0; j < heroes.length; j++){ //<= arr.length-1 --> correct,//< arr.length --> correct.
     console.log(heroes[j]);
 }
 
@@ -74,6 +108,9 @@ for(let i = 0;i <= marks.length-1; i++){
 
 }
 console.log("total no. of marks : "+sumofmarks);
+let averageMarking = sumofmarks/marks.length;
+console.log("Student average marks is : ", averageMarking);
+
 
 //lets Practice : 
 //Ques1).for a given array with marks of students --> [85,97,44,37,76,60].find the average marks of the entire class.
@@ -116,7 +153,9 @@ for(let value of items){
    // value = value - offer;
 }
 
-//Arrays in javascript:
+
+//Arrays in javascript :-
+
 //Array Methods: it used to stores data in an app.
 //methods are two types in Arrays. 1).change arrays (some methods) & 2).not changes in arrays (some methods) --> new arrays formed.as strings methods applied.
 //push-->add || pop --> delete.
