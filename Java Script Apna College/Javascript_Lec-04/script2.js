@@ -112,7 +112,7 @@ let averageMarking = sumofmarks/marks.length;
 console.log("Student average marks is : ", averageMarking);
 
 
-//lets Practice : 
+//lets Practice : - formation of arrays and practice questions.
 //Ques1).for a given array with marks of students --> [85,97,44,37,76,60].find the average marks of the entire class.
 let studentmarks = [85,97,44,37,76,60];
 console.log(studentmarks);
@@ -131,7 +131,7 @@ console.log(`avgmarksofstudent of the entire class = ${avgmarksofstudent}`);
 let itemsprize = [250,645,300,900,50];
 console.log(itemsprize);
 let sumofprize = 0;
-for(let n = 0;n < itemsprize.length; n++){ 
+for(let n = 0; n < itemsprize.length; n++){ 
     sumofprize = sumofprize + itemsprize[n]*90/100;// 90% of 2145 is 1930.5//10% of 2145 is 213.5  //100% --> 10% off all items is 100%-10% --> 90% price buy. 
 
 }
@@ -170,13 +170,18 @@ for(let value of items){
 //
 //5).unshift() : add to start.
 //work as push() method.
+// 
 //6).shift() : delete from start & return.
 //work as pop() method.
+// 
 //7).slice() : returns a piece of array //not change in original array.
 //  slice(startidx,endidx);
+// 
 //8).splice() : change original array(add,remove,replace);
 //splice(startidx,delCount,newEl1);
+// 
 
+// All Methods with examples.
 
 //1).push(). adding elements to at end
 let foodItems = ["potato","apple","litchi","mango","onion","tomato","radish","carrot"];
@@ -219,6 +224,7 @@ console.log(marvelHeroes.slice(1,3));//antman and spiderman.
  let value2 = arr.splice(2,2,101,102);
  console.log(value2);
  console.log(arr);
+ 
  //a).Add Elements no delete but element add.
  let value3 = arr.splice(2,0,104,105);
  console.log(value3);
