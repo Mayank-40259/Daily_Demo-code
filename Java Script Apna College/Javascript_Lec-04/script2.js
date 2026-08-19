@@ -181,7 +181,7 @@ for(let value of items){
 //splice(startidx,delCount,newEl1);
 // 
 
-// All Methods with examples.
+// All Methods with examples through using arrays formation and applying methods on it.
 
 //1).push(). adding elements to at end
 let foodItems = ["potato","apple","litchi","mango","onion","tomato","radish","carrot"];
