@@ -265,6 +265,8 @@ console.log(iconic_heroes.slice(2,5)); // ben 10 and mickey mouse.
  console.log(value5);
 console.log(arr);
 
+// some practice of question : -
+
 //Ques3).Create an array to store companies --> "Bloomberg","Microsoft","Uber","Google","IBM","Netflix".
 //a).Remove the first company from the array. //using shift().
 //b).Remove Uber & Add Ola in its place. //using splice().
