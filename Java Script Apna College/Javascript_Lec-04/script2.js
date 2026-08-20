@@ -199,6 +199,7 @@ console.log("deleted",deleteditems);
 //3).toString(). convert arrays to string
 console.log(foodItems.toString());
 
+//# some special extra methods to used in arrays.
 
 //4).concat().
 let marvelHeroes = ["ironman","antman","spiderman","thor","hulk"];
@@ -233,6 +234,7 @@ console.log(value);
 let value1 = marvelHeroes.shift(); //original arrays ke ander change karke deta hai.
 console.log("deleted ",value1);
 
+// same name type like splice and slice as used in string as printing by index of array.
 
 //7).slice() : it is used for made arrays copy. // --> return a piece of the array.
 //  slice(startIdx, endIdx);
