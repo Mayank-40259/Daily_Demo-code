@@ -189,13 +189,16 @@ console.log(foodItems);
 foodItems.push("chips","burger","paneer","samosa","patties");
 console.log(foodItems);
 
+
 //2).pop().removing elements from starting
 let deleteditems = foodItems.pop();
 console.log(foodItems);
 console.log("deleted",deleteditems);
 
+
 //3).toString(). convert arrays to string
 console.log(foodItems.toString());
+
 
 //4).concat().
 let marvelHeroes = ["ironman","antman","spiderman","thor","hulk"];
@@ -206,33 +209,55 @@ let indianHeroes = ["shaktimaan","krish"];
 console.log(indianHeroes);
 let heroesAll = marvelHeroes.concat(dcHeroes,indianHeroes);
 console.log(heroesAll);
+let iconic_heroes = ["Bheem", "Shiva", "Doraemon", "Ben-ten", "Mickey-Mouse"];
+console.log(iconic_heroes);
+let all_heroes = iconic_heroes.concat(heroesAll);
+console.log(all_heroes);
+
+
+// example of unshift.
+let newArray = all_heroes.unshift("Mickey-Mouse");
+console.log(newArray);  // hm shift kr sakte hain kisi bhi random elements ko from random position to the first element position of the array.
+
+// example of shift.
+let rest_heroes = iconic_heroes.shift();
+console.log("deleted",rest_heroes); // iconic hero arrays ka pehla element tha bheem vo delete ho jayega shift method se.
+
 
 //5).unshift() :as push to starting elements
 let value = marvelHeroes.unshift("captain america"); //original arrays ke ander change karke deta hai.
 console.log(value);
 
+
 //6).shift() :as pop from starting element
 let value1 = marvelHeroes.shift(); //original arrays ke ander change karke deta hai.
 console.log("deleted ",value1);
 
-//7).slice() : it is used for made arrays copy.
+
+//7).slice() : it is used for made arrays copy. // --> return a piece of the array.
+//  slice(startIdx, endIdx);
 console.log(marvelHeroes);
 console.log(marvelHeroes.slice(1,3));//antman and spiderman.
+console.log(iconic_heroes.slice(2,5)); // ben 10 and mickey mouse.
 
-//8).splice() : 
- let arr = [1,2,3,4,5,6];
+
+//8).splice() : change in original array (add, remove, replace);
+// splice( startIdx, delCount, newEl1....);
+// 
+ let arr = [1,2,3,4,5,6,7];
  let value2 = arr.splice(2,2,101,102);
- console.log(value2);
- console.log(arr);
+ console.log(value2); // 101 --> 3 // 102 --> 4.
+ console.log(arr); // 1 2 101 102  5 6 7.
+ 
  
  //a).Add Elements no delete but element add.
  let value3 = arr.splice(2,0,104,105);
- console.log(value3);
- console.log(arr);
+ console.log(value3); // 104 --> 2th index se lagega. -> 105 
+ console.log(arr); // 1 2 104 105 3 4 5 6 7.
  //b).Delete element.
  let value4 = arr.splice(2,2);
- console.log(value4);
- console.log(arr);
+ console.log(value4);  // 3 and 4 ko delete kiya.
+ console.log(arr);   // 1 2 5 6 7
  //c).Replace elements.
  let value5 = arr.splice(2,2,1000,2000);
  console.log(value5);
