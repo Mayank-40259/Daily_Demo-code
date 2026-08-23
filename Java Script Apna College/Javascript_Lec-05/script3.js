@@ -1,6 +1,10 @@
 // Revision of js - lec-05
 console.log("Functions And Methods");
+// Functions and methods :- 
+
+// ## Functions :-
 //Functions : it is a block of code that performs a specific task,can be invoked whenever needed;
+
 //eg: || modiji || --> to call for meeting. || personal assistant || --> ||Driver call for driving|| --> ||Chief call for cooking. 
 // || a piece of code as function || ---> calls to perform a specific task.
 //example of functions.
