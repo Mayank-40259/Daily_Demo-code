@@ -61,7 +61,7 @@ function myFunction(){
 myFunction();//when we calling function 2 times that prints 2 times as;
 myFunction(); //repeat is not good thing of code for coder/developer so minimize redundancy. //repetation --> redundancy //example : pubg game logic of math formulas to repetation of logic in game(repeate a work) from functions;
 
-//Parameter function.
+//Parameter function. : - Parametrize function to passed arguments in it from calling function to parametrized function accept those arguments as parameters are called parameterized function.
 function myFunctioning(msg, n){
     //as parameter --> msg --> input as arguments from calling function;
 
