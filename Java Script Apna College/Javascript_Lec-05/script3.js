@@ -24,17 +24,20 @@ console.log(arr1);
 
 //Functions in javascript;
 //1).function defination : declaration and defination of a function.
-//syntax : function functionName(){
+//syntax : function function_Name(){
 //   //do some work (statements);
 //    //block of code;
 //  }
+
+// function --> reserved keyword.
+// return --> reserved keyword --> values ko return karna. it return only onr value.ex. arr insided multiple value but jayega ek hi array and string ...etc.
 
 
 //2).function call : actual call for function.
 // syntax : functionName();
 
 
-//3).Parametrize function. parameters passed as arguments from main function to permorm an operation or specific task.
+//3).Parametrize function. parameters passed as arguments from main function to perform an operation or specific task.
 //syntax : function functionname(parameter1, parameter2){
 //  //do some work (statements);
 //  } 
@@ -46,8 +49,10 @@ console.log(arr1);
 function myFunction(){
     console.log("Welcom to Apna College & Engineering digest");
     console.log("Apna College build by shradhakhapra");
-    console.log("Engineering digest build by vipul tyagi");
+    console.log("Engineering digest build by Vipul Tyagi Sir");
     console.log("We are learning (JS means JAVA SCRIPT)");
+
+    console.log("Use of Javascript in Reactjs");
 
 
 }
@@ -76,7 +81,7 @@ function mySum(a , b){
     //a and b are parameters as 20,40 argunts from calling function.
 console.log("sum : " +(a + b));
     let c = a + b;
-    console.log("Your sum is : " +c);//60
+    console.log("Your sum is before return : " +c);//60
     return c; //after return the code is not executed as you can see below return c;
     console.log("after return");
 }
@@ -87,9 +92,12 @@ console.log("sum : " +(a + b));
 //Note3 : return keyword is used to return a value from function to calling function;
 //now we will call function mySum;
 
+
+
 //calling function as arguments passed;
 let val = mySum(20 , 40); //c returns its value in val variable.
 console.log("sum from return keyword with c: " +(val));//60
+
 
 //Arrow Functions; it is the part of Modern javascript.
 //Compact way of writing function in javascript;
@@ -145,7 +153,7 @@ const arrowFunctionAddition = (s , t) => {
 //or
 
 const arrowAdd = (s , t) => {  //it ia a variable but performing as function.
-    console.log("addition of arrow function is : " +(r)); //90
+    console.log("addition of arrow function is : " +(s + t)); //90
     return s + t;
 };
 
@@ -155,6 +163,10 @@ const printHello = () => {
     console.log("hello");
 }
 
+printHello();
+arrowAdd(55,45);
+arrowFunctionAddition(20,80);
+
 
 //let's practice;
 //Ques1).Create a function using the "function" keyword that takes a String as an argument & returns the number of vowels in the string.
@@ -162,7 +174,7 @@ const printHello = () => {
 //
 // //Q1. solve
 // function myString(str){
-//     //Apna College; is a string.
+//     //Apna College; & Function is a string.
 //     let count = 0;
 //     for(int i = 0;i <= str.length-1; i++){
 //         if(str = )
@@ -182,6 +194,7 @@ const printHello = () => {
  function countVowel(str){
     //"Apna College", count = 5.
     let count = 0;
+    // using for of loop.
     for(const char of str){
         if(char === "a" || 
            char === "e" || 
@@ -194,7 +207,7 @@ const printHello = () => {
         }
     }
 
-    console.log(count);
+   // console.log(count);
     return count;
 
  }
@@ -218,7 +231,7 @@ const printHello = () => {
         }
 
     }
-     console.log(count1);
+     //console.log(count1);
      return count1;
  }
 
@@ -243,6 +256,7 @@ function abc(){
 }
 
 function myFunc(abc){
+    //abc();
     return abc;
 }
 
