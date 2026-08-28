@@ -99,6 +99,8 @@ let val = mySum(20 , 40); //c returns its value in val variable.
 console.log("sum from return keyword with c: " +(val));//60
 
 
+// Starting Arrow function using both let and const variable.
+
 //Arrow Functions; it is the part of Modern javascript.
 //Compact way of writing function in javascript;
 //syntax : let functionName = (parameters) => {
