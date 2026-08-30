@@ -241,6 +241,8 @@ arrowFunctionAddition(20,80);
 const vowel1 = arrowmyString("software engineering");
 console.log(vowel1);
 
+// Advanced Level up of Function.
+
 //6).forEach Loop in Arrays;it is same as method eg: "Abc"(string).toUpperCase()(method) --> method. function --> it is associated with object to made method;
 //method is a functions when we associated with data,object to made --> methods.
 //arr.forEach(callBackFunction)
