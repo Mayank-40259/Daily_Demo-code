@@ -255,7 +255,8 @@ console.log(vowel1);
 //
 //   })
 //in this callback function having three things : value(items),idx(position),array(itself).
-//function passed as parameters/arguments in to another function that is called callback function.like eg :
+//function passed as parameters/arguments in to another function that is called callback function.like eg :- 
+
 function abc(){
     console.log("hello");
 }
@@ -308,7 +309,9 @@ let calcSquare = (val3,indx4,number) => {
 
 number.forEach(calcSquare);
 
-//Some more Array Methods;
+//Some more Array Methods with examples :-
+// Map(),filter(),Reduce().
+
 //1).Map :creates a new array with the result of some operation.The value its callback returns are used to form new array.
 // arr.map(callbackFunction(value,index,array))
 //syntax : 
@@ -408,6 +411,8 @@ const arrayOutput = array3.reduce((prev , currentvalue) => {
 })
 
 console.log(arrayOutput);
+
+
 
 //Ques4).We are given array of marks of student.Filter out of the marks of students that scored 90+.
 //Ques5).Take a number n as input from user.Create an array of number from 1 to n.
