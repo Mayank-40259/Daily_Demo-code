@@ -413,6 +413,7 @@ const arrayOutput = array3.reduce((prev , currentvalue) => {
 console.log(arrayOutput);
 
 
+// Some practice of question related to Arrays Methods.
 
 //Ques4).We are given array of marks of student.Filter out of the marks of students that scored 90+.
 //Ques5).Take a number n as input from user.Create an array of number from 1 to n.
