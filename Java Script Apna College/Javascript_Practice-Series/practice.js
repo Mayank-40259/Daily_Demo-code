@@ -146,5 +146,23 @@ const myArrowFunction = (str2) =>{
 let vowel2 = myArrowFunction("Vipul Tyagi");
 console.log(vowel2);
 
+// Question 6). For a given array numbers, print the square of each value using the forEach loop.
+// 
+
+let array = [1,2,3,4,5,6,7,8,9,10];
+
+array.forEach((val, idx) => {
+    console.log(val + " = " +val * val, idx);  // Higher Order Function 
+})
+
+// or
+
+let nums = [67, 52, 39];
+
+let calcSquare = (num) => {
+    console.log(num * num);
+};
+
+nums.forEach(calcSquare);
 
 
