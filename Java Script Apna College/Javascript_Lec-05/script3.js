@@ -241,21 +241,35 @@ arrowFunctionAddition(20,80);
 const vowel1 = arrowmyString("software engineering");
 console.log(vowel1);
 
+
 // Advanced Level up of Function.
 
 //6).forEach Loop in Arrays;it is same as method eg: "Abc"(string).toUpperCase()(method) --> method. function --> it is associated with object to made method;
 //method is a functions when we associated with data,object to made --> methods.
-//arr.forEach(callBackFunction)
+//arr.forEach(callBackFunction).
 //CallbackFunction : here, it is a function to execute for each element in array.
+
+// example of forEach loop in array;
+let arr7 = ["pune", "delhi", "mumbai"];
+// strings are used as array of characters in javascript. so we can use forEach loop to print the array values and index of array values.
+// shown error in browser console.
+arr7.forEach((val,idx) => {  // Higher Order Function // by default hota hai ek variable arr7 to print the array values and index of array values. //val --> value at each index, idx --> index of each value.
+    console.log(val.toUpperCase(),idx);
+})
+
+
 //* A callback is a function passed as an arguments to another function.
-//synax of for Each Loop : 
+//synax of for Each Loop :- 
 // arr.forEach((val) => {
 //       
 //    console.log(val);
 //
 //   })
+// 
 //in this callback function having three things : value(items),idx(position),array(itself).
 //function passed as parameters/arguments in to another function that is called callback function.like eg :- 
+// 
+
 
 function abc(){
     console.log("hello");
@@ -313,6 +327,7 @@ number.forEach(calcSquare);
 // Map(),filter(),Reduce().
 
 //1).Map :creates a new array with the result of some operation.The value its callback returns are used to form new array.
+// it returns new array.
 // arr.map(callbackFunction(value,index,array))
 //syntax : 
 // let newArr = arr.map((val) => {
