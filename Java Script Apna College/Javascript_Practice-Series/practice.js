@@ -165,4 +165,7 @@ let calcSquare = (num) => {
 
 nums.forEach(calcSquare);
 
+// complete revision with 2 rounds with question practice of Java script.
+
+
 
