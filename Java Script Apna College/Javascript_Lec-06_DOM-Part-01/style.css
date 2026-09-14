@@ -1,7 +1,19 @@
-h1{
+#heading{
     color: blue;
     text-decoration: line-through;
     background-color : yellow;
+}
+
+#heading2{
+    color: red;
+    text-decoration: dotted;
+    background-color: green;
+}
+
+.headings{
+    color: blue;
+    text-decoration: line-through;
+    background-color: fuchsia;
 }
 
 
