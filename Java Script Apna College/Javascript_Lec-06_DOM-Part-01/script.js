@@ -95,6 +95,7 @@ console.dir(document.head);
 let heading = document.getElementById("heading"); //h1
 console.dir(heading); // when empty collection jb koi element exist nahi karta tb print hoga  --> null.
 
+// -----> Dom is very important for Using in React --> Methods used.
 
 // 2). --> Selecting with class.
 // -> document.getElementsByClassName("myClass")
