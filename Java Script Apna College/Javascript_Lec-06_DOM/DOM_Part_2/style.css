@@ -1,1 +1,12 @@
 /* Adding css to DOM Part 2 */
+
+
+#box {
+    height : 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
