@@ -8,6 +8,7 @@ console.log("Events in Java Script");
 //  --> Events are fired to notify code of "interesting changes" that may affect code execution.
 
 // --> these can arrise through user interactions to submit a form,download movies and document and print the admitcard ... etc.
+// --> Read also in MDN Documentation -> Event reference.
 
 // Mouse events (click, double click ...etc)
 // Keyboard events (Keypress, keyup, keydown)
