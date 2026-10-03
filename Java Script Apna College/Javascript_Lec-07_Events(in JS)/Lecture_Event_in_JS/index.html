@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <button id="btn1">btn1</button>
+    <br>
+    <hr>
+
+    <!-- 1).INline Event Handling. -> use better way is (Event handling in Javascript.) -->
+    <!-- adding an attribute for button. -> jb hm button ke upar click karenge tb button pr likha ayega message(button was clicked) -->
+    <!-- rule -> " insided used single codes -> ' ' " -->
+    <!-- button ke click hone se ek event generate hota hai ush event ke generate hone se (kuch kaam karwa sakte hain ya message print hoga onclick attribute me jo hai.) ishi kaam ko jo hm karwarahe hain -> kahte hain Event-Handling. -->
+
+    <!-- onclick -> one time click. -->
+    <button onclick="console.log('button was clicked');alert('hello')">
+       click me!
+    </button>
+    <!-- ondblclick -> double click -->
+    <!-- doubleclick event handle karne ke liye kiya hmne use ondblclick. -->
+    <button ondblclick="console.log('button was clicked 2x')">
+       click me 2 times!
+    </button>
+
+    <br>
+    <hr>
+
+    <!-- jaise hi hm apne mouse ke arrow ko box ke upar le jaye vese hi kuch print ho browser console me. -->
+    <!-- usse multiple mouse events in MDN Documentation as ex: onmouseover.  -->
+    <div onmouseover="console.log('you are inside div')">this is a box</div>
+
+
+
+    <!-- Events in Java Script -->
+    <!-- Started new Chapter Event in Javascript. along html. -->
+    <!-- Events like time and date related and an event perform like topics are covered. -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
