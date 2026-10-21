@@ -3,17 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
 
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+
+        <!-- image-1 -> ROCK  -->
+        <div class="choice">
+            <img src="./rock.jpeg">
+        </div>
+
+        <!-- image-2 -> PAPER -->
+        <div class="choice">
+            <img src="./paper.jpeg">
+        </div>
+
+        <!-- image-3 -> SCISSOR -->
+        <div class="choice">
+            <img src="./scissor.jpeg">
+        </div>
+    </div>
+
+    <!-- Score-Board -->
+     <div class="score-board">
+
+        <!-- Your Score -->
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+
+        <!-- Computer score -->
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <!-- message print on screen when we win or lost.  -->
+    <div class="msg-container">
+        
+    </div>
+
+
     <!-- Building -> |Rock| vs |Paper| vs |Scissor| -> Game -->
-     <!-- using HTML CSS AND Java Script. -->
-     
-    <script src="script.js"></script>
+    <!-- using HTML CSS AND Java Script. -->
+    <!-- never ending unlimited score game. -> ROCK,Paper,Scissor -->
+
+    <!-- script.js -> app.js -->
+    <script src="script.js"></script> 
 
 
 </body>
