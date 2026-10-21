@@ -2,7 +2,16 @@
 
 /* using HTML CSS AND Java Script -> css -> to inserted colors into your websites. */
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
+h1{
+    background-color: #081b31;
+    color: #fff;
+    
+}
 
 
 
