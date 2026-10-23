@@ -2,19 +2,31 @@
 
 /* using HTML CSS AND Java Script -> css -> to inserted colors into your websites. */
 
+
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+
 
 h1{
     background-color: #081b31;
     color: #fff;
-    
+    height: 5rem;
+    line-height: 5rem;
 }
 
 
+.choice {
+    height: 165px;
+    width: 165px;
+}
 
+.img{
+    height: 100px;
+    width: 100px;
+}
 
 
 
